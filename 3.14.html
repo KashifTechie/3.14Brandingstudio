@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand&family=Rowdies:wght@300;400;700&family=Rubik+Wet+Paint&display=swap');
+        /* Original Desktop Styles */
+        #bg {
+            font-size: 150px;
+            opacity: 0.045;
+            position: fixed;
+        }
+
+        nav {
+            width: 100%;
+            height: 200px;
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(25, 19, 19);
+        }
+        #title{
+            font-size: 100px;
+            font-family: "Rowdies", serif;
+            font-weight: 200;
+            background-image: linear-gradient(135deg, #29323c 10%, #485563 100%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        article {
+            width: 100%;
+            background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+        }
+
+        .question {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #we {
+            width: 80%;
+        }
+
+        .child {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .imgs {
+            width: 47%;
+            height: 260px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 5px 3px 10px black;
+            transition: transform 2s ease-in-out;
+        }
+
+        /* Image sizing */
+        #img1{
+            width: 100%;
+            height: 240px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        #img2{
+            width: 100%;
+            height: 240px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        #img3{
+            width: 100%;
+            height: 240px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        #img4 {
+            width: 100%;
+            height: 240px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .box-1:hover {
+            transform: scale(1.1) translate(10px, 10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        .box-2:hover {
+            transform: scale(1.1) translate(-10px, 10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        .box-3:hover {
+            transform: scale(1.1) translate(10px, -10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        .box-4:hover {
+            transform: scale(1.1) translate(-10px, -10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        footer {
+            margin-top: 50px;
+            width: 100%;
+            height: 200px;
+        }
+       
+
+        .footer-icons {
+            width: 100%;
+            height: 80px;
+            background-color: #a18cd1;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        #insta {
+            width: 50px;
+        }
+
+        /* Mobile View Adjustments */
+        @media (max-width: 768px) {
+
+
+
+        nav {
+            height: 70px;
+            font-size: 20px; /* Adjusted font size */
+        }
+        
+        #title{
+           font-size: 30px;     
+        }
+        #bg {
+            font-size: 30px; /* Further reduced background font */
+        }
+
+        .child {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .imgs {
+            width: 90%;
+        }
+
+        .question h1 {
+            font-size: 24px;
+        }
+        
+        #we {
+            width: 100%; /* Takes full width */
+        }
+            /* Arrange .child divs in column */
+            .child {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                /* Allows items to stack */
+                gap: 20px;
+                /* Adds spacing between elements */
+            }
+
+            .imgs {
+                width: 100%;
+                max-width: 300px;
+                /* Constrains max width */
+                height: auto;
+                /* Responsive height */
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 5px 3px 10px black;
+                margin-bottom: 20px;
+                /* Adds space below images */
+                transition: transform 2s ease-in-out;
+            }
+         #img1,
+         #img3 {
+            width: 100%;
+            margin-right: 10px;
+
+         }
+         #img2,
+         #img4 {
+            width: 100%;
+            margin-left: 10px;
+
+         }
+
+         .box-1:hover {
+            transform: scale(1.1) translate(10px, 10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        .box-2:hover {
+            transform: scale(1.1) translate(-10px, 10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        .box-3:hover {
+            transform: scale(1.1) translate(10px, 10px);
+            transition: transform 1.3s ease-in-out;
+        }
+
+        .box-4:hover {
+            transform: scale(1.1) translate(-10px, 10px);
+            transition: transform 1.3s ease-in-out;
+        }
+           
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <nav>
+        <h1 id="bg">3.14</h1>
+        <marquee behavior="" direction="">
+            <h1 id="title">3.14 BRANDING STUDIO</h1>
+        </marquee>
+    </nav>
+    <article>
+        <div class="question">
+            <h1>Who We Are...</h1>
+        </div>
+        <div class="question">
+            <p id="we">At 3.14 Studio, we are dedicated to transforming your brand and driving growth through
+                cutting-edge marketing strategies and unique label printing solutions. Our team of creative
+                professionals specializes in building brands that connect with audiences and deliver results.</p>
+        </div>
+        <div class="question">
+            <h1>Our services</h1>
+        </div>
+
+
+        <div class="child">
+            <div class="imgs box-1">
+                <img id="img1" src="https://shiftinc.id/wp-content/uploads/2020/01/branding.png" alt="">
+                <div class="img-txt">
+                    <h1 align="center">Branding</h1>
+                    <p style="text-align: center;">Logo design, brand strategy, and identity creation.</p>
+                </div>
+            </div>
+            <div class="imgs box-2">
+                <div class="img-txt box-">
+                    <h1 align="center">Digital Marketing</h1>
+                    <p style="text-align: center;">Social media marketing, SEO, and PPC campaigns.</p>
+                </div>
+                <img id="img2" src="https://img.freepik.com/free-photo/digital-marketing-with-icons-business-people_53876-94833.jpg" alt="">
+            </div>
+        </div>
+        <br><br>
+        <div class="child">
+            <div class="imgs box-3">
+                <img id="img3" src="https://img.freepik.com/premium-photo/laptop-desk-with-city-view-background_771703-27854.jpg" alt="">
+                <div class="img-txt">
+                    <h1 align="center">Business Marketing</h1>
+                    <p style="text-align: center;">Strategy, campaign management, & promotions.</p>
+                </div>
+            </div>
+            <div class="imgs box-4">
+                <div class="img-txt">
+                    <h1 align="center">Label Printing</h1>
+                    <p style="text-align: center;">Custom label design & quality printing solutions.</p>
+                </div>
+                <img id="img4" src="https://img.freepik.com/premium-vector/bottle-label-design-template_672856-171.jpg" alt="">
+            </div>
+        </div>
+        <br><br><br><br>
+    </article>
+    <footer>
+        <h1 align="center">Contact us</h1>
+        <p align="center">Ready to take your brand to the next level? Get in touch!</p>
+        <div class="footer-icons">
+            <!-- insta -->
+            <a
+            href="https://www.instagram.com/3.14brandingstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+
+            </svg>
+        </a>
+
+            
+            </div>
+            <div style="background-color: #a18cd1; margin-bottom: 50px;">
+                <marquee style=" margin-bottom: 20px;" behavior="scroll" direction="left">Stay connected with us for the latest updates and exclusive offers!</marquee>
+            </div>
+      
+        
+    </footer>
+</body>
+
+</html>
+
+<!-- <marquee behavior="" direction=""><h1 id="loop">PI</h1></marquee> -->
